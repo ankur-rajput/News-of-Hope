@@ -1,0 +1,14 @@
+.my-navbar{
+    border: none;
+    background: #63b1c6;
+    box-shadow: 0 3px 12px ;
+}
+
+.logo{
+    height: 50px;
+}
+
+.navbar-glyphicon{
+    color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Latest News for you</title>
+        <meta name="description" content="news from your favourite websites and magazines at one place" />
+
+        <!-- jQuery -->
+        <script src="../static/js/jquery-3.1.1.js"></script>
+        <!-- Latest Bootstrap JavaScript -->
+        <script src="../static/js/bootstrap.js"></script>
+
+        <!-- Latest Bootstrap CSS -->
+        <link rel="stylesheet" href="../static/css/bootstrap.css" />
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../static/css/index.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-static-top my-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left" href="/">
+                        <img class="logo" src="../static/images/logo.jpg">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false" style="color: white;">
+                                Category
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="nav-dLabel">
+                                <li><a href="/positive">Positive</a></li>
+
+                                <li><a href="/neutral">Neutral</a></li>
+
+                                <li><a href="/negative">Negative</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/latest">All</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="card-stack">
+                    <div class="news-card z-depth-2" itemscope="" itemtype="http://schema.org/NewsArticle">
+                      <div class="news-card-image" style="background-image: url('https://assets.inshorts.com/app_assets/images/2016/10oct/16/90d8bc4f-c612-4e38-8d58-9e55c2a7d407-1-1476650253362-basic.jpg?resize=1024px:*&amp;&amp;size=medium')">
+                      </div>
+                      <div class="news-card-title news-right-box">
+                        <a class="clickable" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'TitleOfNews', 'eventAction': 'clicked', 'eventLabel': 'Thailand%20defeat%20USA%2069-22%20in%20Kabaddi%20World%20Cup)' });" style="color:#44444d!important" href="/en/news/thailand-defeat-usa-6922-in-kabaddi-world-cup-1476650251377">
+                          <span itemprop="headline">Thailand defeat USA 69-22 in Kabaddi World Cup</span>
+                        </a>
+                        <div class="news-card-author-time news-card-author-time-in-title">
+                          <span class="short">short</span> by <span class="author">Rajdeep Puri</span> / 
+                          <span class="time" itemprop="datePublished" content="2016-10-16T20:37:31.377Z">02:07 am</span> on <span clas="date">17 Oct 2016,Monday</span>
+                        </div>
+                      </div>
+                      <div class="news-card-content news-right-box">
+                        <div itemprop="articleBody">Thailand defeated USA 69-22 in their Group B encounter of the Kabaddi World Cup in Ahmedabad on Sunday. Thai skipper Khomsan Thongkham scored 14 points, while USA managed three points in the first half. Thailand are now second in Group B with 15 points from four matches, while USA remain winless after four games and are last in the group.</div>
+                        <div class="news-card-author-time news-card-author-time-in-content">
+                          <span class="short">short</span> by <span class="author">Rajdeep Puri</span> / 
+                          <span class="time">02:07 am</span> on <span clas="date">17 Oct</span>
+                        </div>
+                      </div>
+
+                        <div class="news-card-footer news-right-box">
+                          <div class="read-more">read more at <a class="source" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'ReadMore', 'eventAction': 'clicked', 'eventLabel': 'Sportskeeda' });" target="_blank" href="https://full-story.newsinshorts.com/v1/article/90d8bc4f-c612-4e38-8d58-9e55c2a7d407-1 ">Sportskeeda</a></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
