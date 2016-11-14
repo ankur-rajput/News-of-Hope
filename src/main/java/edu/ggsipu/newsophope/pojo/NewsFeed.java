@@ -1,11 +1,8 @@
 package edu.ggsipu.newsophope.pojo;
 
-import java.util.Date;
-
 public class NewsFeed {
 
-	private String title, description, imageLink, link;
-	private Date pubDate;
+	private String title, description, imageLink, link, pubDate, websiteName;
 
 	public String getTitle() {
 		return title;
@@ -39,12 +36,20 @@ public class NewsFeed {
 		this.link = link;
 	}
 
-	public Date getPubDate() {
+	public String getPubDate() {
 		return pubDate;
 	}
 
-	public void setPubDate(Date pubDate) {
+	public void setPubDate(String pubDate) {
 		this.pubDate = pubDate;
+	}
+
+	public String getWebsiteName() {
+		return websiteName;
+	}
+
+	public void setWebsiteName(String websiteName) {
+		this.websiteName = websiteName;
 	}
 
 }

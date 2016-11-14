@@ -56,49 +56,23 @@
         <div class="container">
             <div class="row">
                 <div class="card-stack">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" th:each="n : ${news}">
                         <div class="row">
                             <div class="col-lg-3 col-md-3">
-                                <img class="news-card-image img-responsive" src="images/flipkart.jpg" />
+                                <img class="news-card-image img-responsive" src="images/defaultnews.png" />
                             </div>
                             <div class="col-lg-9 col-md-9">
                                 <div class="panel-heading news-heading">
-                                    <strong>Flipkart may open offline stores: Report</strong>
+                                    <strong th:text="${n.getTitle()}"></strong>
                                 </div>
 
                                 <div class="news-time">
-                                    <span>04:00 pm</span> on <span>21 Oct 2016,Friday</span> 
+                                    <span th:text="${n.getPubDate()}"></span> 
                                 </div>
 
-                                <div class="panel-body news-card-content">
-                                    E-commerce marketplace Flipkart is planning to launch offline stores in small cities, where awareness about online shopping is low and users have inconsistent or limited internet access. Flipkart recently partnered with StoreKing, which offers products via its tablets installed at retail outlets in rural areas. Flipkart's rival Amazon launched its offline shopping initiative called Udaan in 2014.
-                                </div>
+                                <div class="panel-body news-card-content" th:text="${n.getDescription()}"></div>
                                 <div class="panel-footer">
-                                    <div>read more at <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'ReadMore', 'eventAction': 'clicked', 'eventLabel': 'Livemint' });" target="_blank" href="https://full-story.newsinshorts.com/v1/article/bdd2922e-b9af-4aff-8354-2aab84bb531d-1 ">Livemint</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3">
-                                <img class="news-card-image img-responsive" src="images/flipkart.jpg" />
-                            </div>
-                            <div class="col-lg-9 col-md-9">
-                                <div class="panel-heading news-heading">
-                                    <strong>Flipkart may open offline stores: Report</strong>
-                                </div>
-
-                                <div class="news-time">
-                                    <span>04:00 pm</span> on <span>21 Oct 2016,Friday</span> 
-                                </div>
-
-                                <div class="panel-body news-card-content">
-                                    E-commerce marketplace Flipkart is planning to launch offline stores in small cities, where awareness about online shopping is low and users have inconsistent or limited internet access. Flipkart recently partnered with StoreKing, which offers products via its tablets installed at retail outlets in rural areas. Flipkart's rival Amazon launched its offline shopping initiative called Udaan in 2014.
-                                </div>
-                                <div class="panel-footer">
-                                    <div>read more at <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'ReadMore', 'eventAction': 'clicked', 'eventLabel': 'Livemint' });" target="_blank" href="https://full-story.newsinshorts.com/v1/article/bdd2922e-b9af-4aff-8354-2aab84bb531d-1 ">Livemint</a></div>
+                                    <div>read more at <a th:href="${n.getLink()}" th:text="${n.getWebsiteName()}"></a></div>
                                 </div>
                             </div>
                         </div>

@@ -21,6 +21,7 @@ public class HomeController {
 		List<NewsFeed> news = service.getNews();
 
 		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("news", news);
 		modelAndView.setViewName("index");
 		return modelAndView;
 	}
