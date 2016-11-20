@@ -1,4 +1,6 @@
 edu/ggsipu/newsophope/pojo/NewsFeed.class
+edu/ggsipu/newsofhope/service/impl/ServiceImpl$1.class
+edu/ggsipu/newsofhope/service/impl/ServiceImpl$FetchNews.class
 edu/ggsipu/newsofhope/service/impl/ServiceImpl.class
 edu/ggsipu/newsofhope/controllers/HomeController.class
 edu/ggsipu/newsofhope/config/Application.class

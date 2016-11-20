@@ -2,7 +2,7 @@ package edu.ggsipu.newsofhope.service;
 
 import java.util.List;
 
-import edu.ggsipu.newsophope.pojo.NewsFeed;
+import edu.ggsipu.newsofhope.pojo.NewsFeed;
 
 public interface IService {
 

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import edu.ggsipu.newsofhope.pojo.NewsFeed;
 import edu.ggsipu.newsofhope.service.IService;
-import edu.ggsipu.newsophope.pojo.NewsFeed;
 
 @Controller
 public class HomeController {

@@ -17,8 +17,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Service;
 
+import edu.ggsipu.newsofhope.pojo.NewsFeed;
 import edu.ggsipu.newsofhope.service.IService;
-import edu.ggsipu.newsophope.pojo.NewsFeed;
 
 @Service
 public class ServiceImpl implements IService {
